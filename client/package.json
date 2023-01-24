@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "start": "npm run -s build:ssr && npm run -s serve:ssr",
+    "devStart": "vite",
     "build": "vite build",
     "preview": "vite preview",
     "test": "vitest --coverage"
