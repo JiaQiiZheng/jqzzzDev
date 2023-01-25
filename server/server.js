@@ -14,15 +14,13 @@ app.use(cors(corsOptions));
 // parse application/json
 app.use(bodyParser.json());
 
-// import usersRouter from "../server/routes/users.js";
-// app.use("/users", usersRouter);
-// import subscribersRouter from "./routes/subscribers.js";
-// app.use("/subscribers", subscribersRouter);
-import registerRouter from "./routes/register.js";
-import authRouter from "./routes/auth.js";
-app.use("/register", registerRouter);
-app.use("/auth", authRouter);
-app.use(verifyJWT);
+// import registerRouter from "./routes/register.js";
+// import authRouter from "./routes/auth.js";
+import homeRouter from "./routes/home.js";
+// app.use("/register", registerRouter);
+// app.use("/auth", authRouter);
+app.use("/home", homeRouter);
+// app.use(verifyJWT);
 
 import mongoose, { setDriver } from "mongoose";
 mongoose.set("strictQuery", false);
