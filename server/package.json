@@ -9,7 +9,7 @@
   },
   "scripts": {
     "devStart": "nodemon server.js",
-    "build": "rimraf build && tsc"
+    "build": "build --output public"
   },
   "keywords": [],
   "author": "",
