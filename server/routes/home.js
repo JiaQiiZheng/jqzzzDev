@@ -2,9 +2,7 @@ import express from "express";
 const router = express.Router();
 
 router.get("/", async (req, res) => {
-  return res
-    .status(400)
-    .json({ message: "Username and password are required." });
+  return res.json({ message: "Hello From Express!" });
 });
 
 export default router;

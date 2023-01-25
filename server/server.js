@@ -19,7 +19,7 @@ app.use(bodyParser.json());
 import homeRouter from "./routes/home.js";
 // app.use("/register", registerRouter);
 // app.use("/auth", authRouter);
-app.use("/home", homeRouter);
+app.use("/", homeRouter);
 // app.use(verifyJWT);
 
 import mongoose, { setDriver } from "mongoose";
