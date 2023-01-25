@@ -26,7 +26,7 @@ export default function App() {
             <Route path="work_Apalachicola" element={<Work_Apalachicola />} />
           </Route>
           <Route path="Register" element={<Register />} />
-          <Route path="Login" element={<Login />} />
+          <Route path="Auth" element={<Login />} />
         </Routes>
       </div>
     </div>

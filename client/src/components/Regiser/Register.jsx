@@ -88,7 +88,7 @@ export default function Register() {
         <section>
           <h1>Success!</h1>
           <p>
-            <a href="login">Sign In</a>
+            <a href="auth">Sign In</a>
           </p>
         </section>
       ) : (
@@ -222,7 +222,7 @@ export default function Register() {
             Already registered?
             <br />
             <span className="line">
-              <a href="/login">Sign In</a>
+              <a href="/auth">Sign In</a>
             </span>
           </p>
         </section>

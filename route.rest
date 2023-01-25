@@ -6,7 +6,7 @@ GET http://localhost:8080/subscribers
 GET http://localhost:8080/subscribers/63ca2cede18a49f47ba7cbbf
 
 ###create one subscriber
-POST http://localhost:8080/subscribers
+POST http://localhost:8080/login
 Content-Type: application/json
 
 {
