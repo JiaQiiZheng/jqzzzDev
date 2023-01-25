@@ -8,8 +8,7 @@
     "node": "18.x"
   },
   "scripts": {
-    "devStart": "nodemon server.js",
-    "build": "build --output public"
+    "start": "nodemon server.js"
   },
   "keywords": [],
   "author": "",
