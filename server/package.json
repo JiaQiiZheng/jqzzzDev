@@ -9,7 +9,7 @@
   },
   "scripts": {
     "start": "nodemon server.js",
-    "vercel-build": "node ./build.js"
+    "vercel-build": "node ./server.js"
   },
   "keywords": [],
   "author": "",
