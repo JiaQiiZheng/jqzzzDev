@@ -1,34 +1,46 @@
+# ###
+# GET http://localhost:8080/posts
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSmlhcWkiLCJpYXQiOjE2NzQ4Nzc2NTEsImV4cCI6MTY3NDg3NzY2Nn0.hv3EMl5Rr9VfBZWaqwSwy-gKwpUqMljNTCNm4z0egJQ
 
-###get all subscribers
-GET http://localhost:8080/subscribers
+# ###
+# DELETE http://localhost:8081/logout
+# Content-Type: application/json
 
-###get one subscriber
-GET http://localhost:8080/subscribers/63ca2cede18a49f47ba7cbbf
+# {"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSmlhcWkiLCJpYXQiOjE2NzQ4ODAwNDV9.D0PzMfkuw_nFou-0LmplyVVNC1jvTs8N2erDmhQxAGI"}
 
-###create one subscriber
-POST http://localhost:8080/login
-Content-Type: application/json
+# ###
+# POST http://localhost:8081/token
+# Content-Type: application/json
 
-{
-    "name": "Yap",
-    "subscribedToChannel": "Web Sim"
-}
+# {"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSmlhcWkiLCJpYXQiOjE2NzQ4ODAwNDV9.D0PzMfkuw_nFou-0LmplyVVNC1jvTs8N2erDmhQxAGI"}
 
-###delete one subscriber
-DELETE http://localhost:8080/subscribers/63c73561a851adf6970d9c16
+# ###
+# POST http://localhost:8081/login
+# Content-Type: application/json
 
-###delete all subscribers
-DELETE http://localhost:8080/subscribers/
+# {
+#     "username": "Jiaqi"
+# }
 
-###update one subscriber
-PATCH http://localhost:8080/subscribers/63c73561a851adf6970d9c16
+###
+GET http://localhost:8080/users
 Content-Type: application/json
 
 ###
-GET https://jqzzz-server.vercel.app
+POST http://localhost:8080/users
 Content-Type: application/json
 
 {
-    "user": "jiaqijiaqijiaqi",
-    "pwd": "$2b$10$INaRVLavz9YbR8AY8en3u.gtw9BLXkwiG6n39ekw1HGlGTHIKVZqy"
+    "name": "Jiaqi",
+    "password": "jiayou"
 }
+
+###
+POST http://localhost:8080/users/login
+Content-Type: application/json
+
+{
+    "name": "Jiaqi",
+    "password": "jiayou"
+}
+
